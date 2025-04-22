@@ -1,3 +1,4 @@
+import HeroSection from "@/components/hero";
 import { IBlog } from "@/types/blog";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,9 +9,10 @@ export default async function Home() {
   // console.log(data)
   return (
     <div data-cy="blog-item">
-        <h2 className="pt-0 pb-4 px-5 text-xl sm:text-5xl font-bold mt-6">
-          <span className="text-black">Artikel</span>{' '}
-          <span className="text-teal-600">Terkini</span>
+      <HeroSection/>
+        <h2 className="pt-0 pb-4 px-5 text-xl sm:text-5xl font-bold mt-10">
+          <span className="text-black">Featured</span>{' '}
+          <span className="text-amber-600">Blog</span>
         </h2>
     <div className="grid w-full py-4 px-5 max-sm:px-5 gap-2 grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
       {
@@ -30,7 +32,7 @@ export default async function Home() {
                
               </div>
               <div className="p-4">
-                <h2 className="text-sm font-semibold text-teal-500">{blog.category}</h2>
+                <h2 className="text-sm font-semibold text-amber-600">{blog.category}</h2>
                 <h2 className="text-md font-bold line-clamp-2 text-gray-900">{blog.title}</h2>
                 <div className="flex gap-2 mt-4">
                   <div className="w-10 h-10 relative">
@@ -51,7 +53,7 @@ export default async function Home() {
                 </div>
                 </div>
                 <Link href={`/blog/${blog.objectId}`}
-                className="inline-flex items-center px-3 py-2 text-sm text-white bg-teal-700 rounded-lg mt-4 hover:bg-amber-600">
+                className="inline-flex items-center px-3 py-2 text-sm text-white bg-amber-700 rounded-lg mt-4 hover:bg-amber-600">
                   Read More
                 </Link>
               </div>

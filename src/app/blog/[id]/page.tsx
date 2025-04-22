@@ -10,7 +10,7 @@ export default async function Page({params}:{params:Promise<{id:string}>}) {
     return(
         
     <div className="max-w-3xl mx-auto px-4 py-10" >
-    <div className="text-teal-500 font-bold text-center mb-4">Artikel - {blog.category}</div>
+    <div className="text-amber-500 font-bold text-center mb-4">Artikel - {blog.category}</div>
       <h1 className="text-4xl font-bold text-center mb-6">{blog.title}</h1>
       <div className="w-full h-px bg-gray-300 my-6" />
       <div className="flex gap-2 mt-4 mb-4">

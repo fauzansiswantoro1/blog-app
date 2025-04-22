@@ -10,7 +10,8 @@ export default async function Navbar() {
            HotCoffee☕
            </Link>
             {data? (<div className="flex items-center gap-2 h-[30px]">
-                <p>{data.user.name}</p>
+                <p className="px-2 text-white font-bold">{data.user.name}</p>
+                <Link href={"/blog/create"} className="px-4 py-2 bg-white text-teal-500 font-semibold rounded-lg hover:bg-teal-300 hover:text-white transition duration-300">Create</Link>
                 <Logout/>
                 </div>) :(
                 <div className="flex gap-2">

@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar";
 import { SessionProvider } from "next-auth/react";
 
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
         <SessionProvider>
         <Navbar />
         {children}
+        
         </SessionProvider>
         <ToastContainer 
           position="bottom-right"
@@ -43,7 +45,9 @@ export default function RootLayout({
           closeOnClick
           transition={Bounce}
         />
+        
       </body>
+      
     </html>
   );
 }

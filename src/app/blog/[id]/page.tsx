@@ -9,7 +9,7 @@ export default async function Page({params}:{params:Promise<{id:string}>}) {
     const blog:IBlog = await res.json()
     return(
         
-    <div className="max-w-3xl mx-auto px-4 py-10">
+    <div className="max-w-3xl mx-auto px-4 py-10" >
     <div className="text-teal-500 font-bold text-center mb-4">Artikel - {blog.category}</div>
       <h1 className="text-4xl font-bold text-center mb-6">{blog.title}</h1>
       <div className="w-full h-px bg-gray-300 my-6" />
@@ -38,7 +38,8 @@ export default async function Page({params}:{params:Promise<{id:string}>}) {
         height={500}
         className="mx-auto rounded-lg"
       />
-      <p className="mt-6 text-justify text-gray-700 leading-relaxed">{blog.content}</p>
+      {/* <p className="mt-6 text-justify text-gray-700 leading-relaxed">{blog.content}</p> */}
+      <div dangerouslySetInnerHTML={{ __html: blog.content }} className="text-justify" />
     </div>
     )
 }

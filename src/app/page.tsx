@@ -7,7 +7,7 @@ export default async function Home() {
   const data:IBlog[] = await res.json()
   // console.log(data)
   return (
-    <div>
+    <div data-cy="blog-item">
         <h2 className="pt-0 pb-4 px-5 text-xl sm:text-5xl font-bold mt-6">
           <span className="text-black">Artikel</span>{' '}
           <span className="text-teal-600">Terkini</span>
@@ -60,6 +60,7 @@ export default async function Home() {
         })
       }
     </div>
+    
     </div>
   );
 }

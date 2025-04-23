@@ -12,7 +12,7 @@ export default function AboutPage() {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Blog History</h2>
         <p className="text-gray-700 leading-relaxed">
-          Our blog began as a passion project in 2020 with the goal of sharing insightful articles on technology, lifestyle, and personal growth. Initially, it started as a small space for the author to jot down ideas, but over time it grew into a community of like-minded readers and contributors. The blog has undergone several redesigns and expansions to cater to a broader audience while staying true to its core values of knowledge-sharing, inspiration, and creativity.
+          Our blog began as a passion project in 2025 with the goal of sharing insightful articles on technology, lifestyle, and personal growth. Initially, it started as a small space for the author to jot down ideas, but over time it grew into a community of like-minded readers and contributors. The blog has undergone several redesigns and expansions to cater to a broader audience while staying true to its core values of knowledge-sharing, inspiration, and creativity.
         </p>
       </section>
 

@@ -35,7 +35,7 @@ export default function BlogList() {
     );
 
   return (
-    <div data-cy="blog-item">
+    <div data-cy="blog-item" className="w-full">
       <div className="px-5 mt-6">
         <h2 className="text-xl flex justify-center sm:text-5xl font-bold">
           <span className="text-black">Blog</span>{' '}
@@ -74,7 +74,7 @@ export default function BlogList() {
         </div>
 
         {/* Blog Grid */}
-        <div className="flex flex-wrap justify-center gap-4 py-6">
+        <div className="grid gap-6 px-4 py-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-w-screen-xl mx-auto justify-items-center">
           {filteredAndSortedBlogs.map((blog, idx) => (
             <div key={idx} className="border rounded-lg shadow-sm hover:shadow-md transition max-w-[300px] w-full">
               <div className="h-[200px] w-full relative overflow-hidden">

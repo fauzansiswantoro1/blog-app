@@ -34,7 +34,7 @@ export default function Navbar() {
   );
 
   return (
-    <nav className=" sticky bg-amber-500 text-white px-6 py-4 flex items-center justify-between top-0 z-50">
+    <nav className=" sticky bg-gradient-to-r from-amber-500 to-amber-700 text-white shadow-2xl px-6 py-4 flex items-center justify-between top-0 z-50">
       <div className="text-xl font-bold">HotCoffee☕</div>
 
       {/* Desktop Links */}

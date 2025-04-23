@@ -43,7 +43,7 @@ export default function BlogList() {
         </h2>
 
         {/* Filters */}
-        <div className="flex flex-wrap justify-center gap-4 mt-6">
+        <div className="flex flex-wrap justify-center gap-4 mt-6 font-bold">
           <select
             className="border border-gray-300 rounded px-3 py-1"
             onChange={(e) => setSortOrder(e.target.value as 'newest' | 'oldest')}

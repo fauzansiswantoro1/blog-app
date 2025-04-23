@@ -15,7 +15,7 @@ export default function Navbar() {
   const AuthLinks = () => (
     <>
       <p className="px-2 text-white font-bold">{session?.user?.name}</p>
-      <Link href="/" className="nav-link hover:text-black">Home</Link>
+      <Link href="/" className=" nav-link hover:text-black">Home</Link>
       <Link href="/about" className="nav-link hover:text-black">About</Link>
       <Link href="/blog" className="nav-link hover:text-black">Blog</Link>
       <Link href="/blog/create" className="nav-link bg-white text-amber-700 px-2 py-2 rounded-xl hover:bg-teal-500 hover:text-white font-bold">➕ Create</Link>
@@ -25,16 +25,16 @@ export default function Navbar() {
 
   const GuestLinks = () => (
     <>
-      <Link href="/" className="nav-link hover:text-black">Home</Link>
-      <Link href="/about" className="nav-link hover:text-black">About</Link>
-      <Link href="/blog" className="nav-link hover:text-black">Blog</Link>
+      <Link href="/" className="font-bold nav-link hover:text-black">Home</Link>
+      <Link href="/about" className="font-bold nav-link hover:text-black">About</Link>
+      <Link href="/blog" className="font-bold nav-link hover:text-black">Blog</Link>
       <Link href="/login" className="nav-link  bg-white text-amber-700 px-2 py-2 rounded-xl hover:bg-teal-500 hover:text-white font-bold">Login</Link>
       <Link href="/register" className="nav-link  bg-white text-amber-700 px-2 py-2 rounded-xl hover:bg-teal-500 hover:text-white font-bold">Register</Link>
     </>
   );
 
   return (
-    <nav className=" sticky bg-gradient-to-r from-amber-500 to-amber-700 text-white shadow-2xl px-6 py-4 flex items-center justify-between top-0 z-50">
+    <nav className=" sticky bg-gradient-to-r from-amber-500 to-amber-700 text-white shadow-2xl px-10 py-4 flex items-center justify-between top-0 z-50">
       <div className="text-xl font-bold">HotCoffee☕</div>
 
       {/* Desktop Links */}
